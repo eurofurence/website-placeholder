@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow, noodp, noarchive" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="Eurofurence, EF, Furry, Convention, Fursuits, Furry-Convention, Furrycon, Furry-Con, furry, fur-fans" />
+		<meta name="rating" content="general" />
+		
+		<title>Eurofurence</title>
+
+		<!-- UIkit CSS -->
+		<link rel="stylesheet" href="css/uikit.min.css" />
+
+		<!-- UIkit JS -->
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #015d52;	
+				background-image: url('background.jpg');
+				background-repeat: repeat-x;
+			}
+			main {
+				border: 1px solid transparent;
+				font-family: arial, sans-serif;
+				line-height: 20px;
+				position: relative;
+				min-height: 100vh;
+			}
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+			a:hover {
+				color: #fff;
+				text-decoration: underline;
+			}
+			#logo {
+				z-index: 2;
+				position: absolute;
+				right: 55px;
+				top: 0px;
+				height: 203px;
+				width: 70px;
+				background-image: url('ef-logo.png');
+				background-repeat: no-repeat;
+				-webkit-box-shadow:  1px -9px 9px 3px rgba(0, 0, 0, 0.5);
+				box-shadow:  1px -9px 9px 3px rgba(0, 0, 0, 0.5);
+			}
+			section {
+				z-index: 1;
+				position: relative;
+				background-color: white;
+				width: 930px;
+				margin: 130px auto 0 auto;
+				padding: 30px 25px;
+				-webkit-box-shadow:  0px 0px 9px 3px rgba(0, 0, 0, 0.4);
+				box-shadow:  0px 0px 9px 3px rgba(0, 0, 0, 0.4);
+				text-align: center;
+			}
+			h1 {
+				margin-bottom: 5px;
+				line-height: 1em;
+			}
+			h3 {
+				color: #fff;
+			}
+						
+			/* footer */
+			footer {
+				position: absolute;
+				bottom: 0px;
+				padding: 20px;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+			footer > div {
+				width: 930px;
+				margin: 0 auto;
+			}
+			footer .uk-button-group {
+				display: inline-flex;
+				vertical-align: middle;
+				position: relative;
+			}
+			footer .uk-button-group a ~ a {
+				margin-left: 6px; 
+			}
+			/* uikit overrides */
+			span.uk-icon {
+				margin-right: 0.25em;
+			}
+			span.ef-uk-icon-lift {
+				position: relative;
+				top: -1px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<main>
+			<div id="logo"></div>
+			
+			<section>
+				<h1>Stay Tuned!</h1>
+				<p>We'll be back shortly.</p>
+			</section>
+
+			<footer>
+				<div>
+					<div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-expand@l uk-grid-divider" uk-grid>
+						<div>
+							<h3>Find us on</h3>
+							<div class="uk-button-group">
+								<a target="_blank" href="https://www.eurofurence.org/" class="ef-hide-ext uk-icon-button uk-icon" uk-tooltip="pos:bottom" title="Homepage" uk-icon="home"></a>
+								<a target="_blank" href="https://app.eurofurence.org/" class="ef-hide-ext uk-icon-button uk-icon" uk-tooltip="pos:bottom" title="iOS & Android" uk-icon="phone"></a>
+								<a target="_blank" href="https://www.twitter.com/eurofurence" class="ef-hide-ext uk-icon-button uk-icon" uk-tooltip="pos:bottom" title="Twitter" uk-icon="twitter"></a>
+								
+								<a target="_blank" href="https://www.facebook.com/eurofurence" class="ef-hide-ext uk-icon-button uk-icon" uk-tooltip="pos:bottom" title="Facebook" uk-icon="facebook"></a>
+								<a target="_blank" href="https://vimeo.com/eurofurence" class="ef-hide-ext uk-icon-button uk-icon" uk-tooltip="pos:bottom" title="Vimeo" uk-icon="vimeo"></a>
+								<a target="_blank" href="https://discord.com/invite/VMESBMM" class="ef-hide-ext uk-icon-button uk-icon" uk-tooltip="pos:bottom" title="Discord" uk-icon="discord"></a>
+							</div>
+						</div>
+
+						<div>
+							<h3>Help</h3>
+							<ul class="uk-list">
+								<li><a href="https://forum.eurofurence.org/" target="_blank"><span uk-icon="icon:comments" class="ef-uk-icon-lift"></span>Forums</a></li>
+								<li><a href="https://help.eurofurence.org/contact" target="_blank"><span uk-icon="icon:mail" class="ef-uk-icon-lift"></span>Contact Us</a></li>
+								<li><a href="https://help.eurofurence.org/faq" target="_blank"><span uk-icon="icon:question" class="ef-uk-icon-lift"></span>Frequently Asked Questions (FAQ)</a></li>
+							</ul>
+						</div>
+
+						<div>
+							<h3>Legal</h3>
+							<ul class="uk-list">
+								<li><a href="https://help.eurofurence.org/legal/imprint" target="_blank"><span uk-icon="icon:bookmark" class="ef-uk-icon-lift"></span>Imprint &amp; Legal Notice</a></li>
+								<li><a href="https://help.eurofurence.org/legal/privacy" target="_blank"><span uk-icon="icon:lock" class="ef-uk-icon-lift"></span>Privacy Statement</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
