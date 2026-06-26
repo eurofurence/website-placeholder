@@ -34,11 +34,11 @@
 				position: relative;
 				min-height: 100vh;
 			}
-			a, h2, h3 {
+			footer a, footer h2, footer h3 {
 				color: #fff;
 				text-decoration: none;
 			}
-			a:hover {
+			footer a:hover {
 				color: #fff;
 				text-decoration: underline;
 			}
@@ -54,11 +54,30 @@
 				-webkit-box-shadow:  1px -9px 9px 3px rgba(0, 0, 0, 0.5);
 				box-shadow:  1px -9px 9px 3px rgba(0, 0, 0, 0.5);
 			}
+			#theme {
+				position: relative;
+				margin: 0 auto;
+				max-width: 800px;
+				color: #fff;
+				text-align: center;
+				min-height: 100vh;
+			}
+			#theme > img {
+				height: calc(80vh - 2.5rem);
+				width: auto;
+				object-fit: contain;
+			}
+			#theme > p {
+				margin: 10px 0 0;
+				font-size: 1.5em;
+				line-height: 1.75em;
+				width: 100%;
+			}
 			section, footer {
 				position: relative;
 				z-index: 1;
-				max-width: 930px;
-				margin: 130px auto 0 auto;
+				max-width: 1440px;
+				margin: 10px auto;
 			}
 			section {
 				background-color: white;
@@ -68,9 +87,16 @@
 				padding: 30px 25px;
 
 			}
-			h1 {
-				margin-bottom: 5px;
+			section a {
+				color: #015d52;
+				text-decoration: underline;
+			}
+			section h1, section h3 {
+				margin: 5px;
 				line-height: 1em;
+			}
+			section h3 {
+				margin-bottom: 2rem;
 			}
 				
 			/* footer */
@@ -110,16 +136,99 @@
 				position: relative;
 				top: -1px;
 			}
+
+			/* consent cover */
+			
+			.consent-cover {
+				background-color: rgba(0, 0, 0, .3);
+				color: #000;
+				font-size: 1.33em;
+				line-height: 1.33em;
+				font-weight: 600;
+				text-align: center;
+				min-height: 800px;
+				padding-top: 150px;
+				border-radius: 6px;
+				cursor: pointer;
+			}
+			.consent-cover:hover {
+				background-color: rgba(0, 0, 0, .2);
+			}
 		</style>
 	</head>
 	
 	<body>
 		<main>
-			<div id="logo"></div>
+			<!-- <div id="logo"></div> -->
 			
+			<div id="theme">
+				<img src="img/ef30.png" alt="Eurofurence 30: Fantastic Furry Festival" />
+				<p>
+					August 19th to 23rd, 2026<br />
+					CCH Hamburg, Germany
+				</p>
+				<p><span class="uk-text-meta" style="color: #fff">scroll down</span><br /><span uk-icon="chevron-down" style="position: relative; top: -1em; left: .1em"></span></p>
+			</div>
+			<!-- <section>
+				<h1>
+					Eurofurence 30<br />
+					<h3 class="uk-text-italic">Fantastic Furry Festival</h3>
+				</h1>
+				
+				<p class="uk-text-bold">
+					Book your hotel now via<br />
+					<a href="https://hotelmap.com/M7TNP" target="_blank">https://hotelmap.com/M7TNP</a>
+				</p>
+			</section> -->
+			
+			<section class="uk-margin-bottom">
+				<h2>Post-EF29 Survey</h2>
+				<p>
+					If you were at Eurofurence 29 (2025), <br />
+					we would like to invite you to <a href="https://survey.eurofurence.org/index.php/122222">take our Post-Con Survey</a>!
+				</p>
+			</section>
+
+			<section class="uk-margin-bottom">
+				<h2>Special Hotel Rates</h2>
+				<p>
+					We are preparing to announce special room rates with <br />
+					<strong>Scandic Hamburg Emporio Dammtorwall</strong>, <br />
+					<strong>Grand Elysée Hamburg</strong>, <br />
+					<!-- <strong>Intercity Hotel Hamburg Dammtor</strong>, <br /> -->
+					<strong>Radisson Blu Hamburg Dammtor</strong> <br />
+					on
+				</p>
+				<p>September 27th, 15:00 CEST</p>
+				<p>Watch this space for booking instructions.</p>
+			</section>
+
 			<section>
-				<h1>Stay Tuned!</h1>
-				<p>We'll be back shortly.</p>
+				<h2>Hotel Options</h2>
+				<p>You can already book a hotel room via our partner service:</p>
+				<!-- by the order of Cheetah, we are to allow all external domains; implemented by disabling CSP headers completely on vserver level -->
+
+				<div
+					class="consent-cover uk-width-1-1"
+					data-element-type="iframe"
+					data-src="kuoni.html"
+					data-class="uk-width-1-1"
+					data-title="Eurofurence Hotels"
+					data-uk-height-viewport="offset-bottom: 120px"
+				>Consent required: Click here to allow external contents.</div>
+
+				<hr />
+
+				<div class="uk-child-width-1-2@m uk-grid-divider uk-text-left" uk-grid>
+					<div>
+						<h4><span uk-icon="warning"></span>Notice regarding hotel booking:</h4>
+						<p>The booking of accommodations is offered through a third-party provider. The contracting party for the hotel booking is solely the respective provider/hotelier. The convention organizer and the ticketing portal act only as intermediaries and are not contracting parties for the accommodation service. No packaged tour or linked travel arrangement within the meaning of §§ 651a et seq. BGB is created. Any claims in connection with the hotel booking must be made directly with the hotel or the booking portal.</p>
+					</div>
+					<div>
+						<h4><span uk-icon="warning"></span>Hinweis zur Hotelbuchung:</h4>
+						<p>Die angebotene Unterkunftsbuchung erfolgt über einen Drittanbieter. Vertragspartner für die Hotelbuchung ist ausschließlich der jeweilige Anbieter/Hotelier. Der Convention-Veranstalter sowie das Ticketing-Portal treten hierbei lediglich als Vermittler auf und sind nicht Vertragspartner der Unterkunftsleistung. Es entsteht keine Pauschalreise oder verbundene Reiseleistung im Sinne der §§ 651a ff. BGB. Etwaige Ansprüche im Zusammenhang mit der Hotelbuchung sind direkt gegenüber dem Hotel bzw. dem Buchungsportal geltend zu machen.</p>
+					</div>
+				</div>
 			</section>
 		</main>
 
@@ -127,12 +236,12 @@
 			<div class="uk-child-width-1-2@m" uk-grid>
 				<div>
 					<h2 id="ef-footer-title">
-						Eurofurence ##</br />
-						<span class="uk-text-meta uk-text-italic">Festival</span>
+						Eurofurence 30</br />
+						<span class="uk-text-meta uk-text-italic">Fantastic Furry Festival</span>
 					</h2>
 					<div>
 						<div class="uk-margin-medium-top uk-margin-medium-bottom">
-							January 1st to 2nd, 2000<br />
+							August 19th to 23rd, 2026<br />
 							CCH Hamburg, Germany
 						</div>
 						<div class="uk-button-group uk-width-1-1 uk-margin-small-bottom">					
@@ -150,7 +259,7 @@
 					</div>
 				</div>
 
-				<div class="uk-text-right">
+				<div class="uk-text-right@m">
 					<h3>Help &amp; Legal</h3>					
 					<ul class="uk-list">
 						<li><a href="https://help.eurofurence.org/contact" target="_blank"><span uk-icon="mail" class="ef-uk-icon-lift"></span>Contact Us</a></li>
@@ -162,5 +271,7 @@
 				</div>
 			</div>
 		</footer>
+		
+		<script src="js/consent-cover.js"></script>
 	</body>
 </html>
